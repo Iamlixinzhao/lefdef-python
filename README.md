@@ -2,14 +2,39 @@
 
 This repository provides a Python interface to parse LEF (Library Exchange Format) and DEF (Design Exchange Format) files.
 
+
 ## Install
 
+Make sure you have installed lib bison and zlib
+
+```bash
+apt-get update
+apt-get install -y bison zlib1g-dev
+```
+Also cmake
+
+```bash
+apt-get install -y cmake
+```
 You can install library using pip
 
 
 ```bash
 pip install lefdef
 ```
+## How to run
+
+First create a build folder then cmake all the files
+
+```bash
+cd /lefdef-python
+mkdir build
+cd build
+cmake ..
+make
+```
+
+After generating the .so file, you should copy the .so file under build folder to lefdef/lib. It should be liblefdef.so
 
 ## Usage
 
