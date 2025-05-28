@@ -36,6 +36,10 @@ make
 
 After generating the .so file, you should copy the .so file under build folder to lefdef/lib. It should be liblefdef.so
 
+Then
+```bash
+python test.py
+```
 ## Usage
 
 To use the LEF reader, you can follow the example provided in the `test.py` file:
