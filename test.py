@@ -1,10 +1,11 @@
 from lefdef import C_LefReader
 from lefdef import C_DefReader
-#change the file address below
+
+# Example usage with the sample files shipped in the ``test`` directory
 lef_reader = C_LefReader()
-_lef = lef_reader.read("external/def/TEST/complete.5.8.def")
+_lef = lef_reader.read("test/NanGate_15nm_UTDA.tech.lef")
 _lef.print()
 
 def_reader = C_DefReader()
-_def = def_reader.read("external/lef/TEST/complete.5.8.lef")
+_def = def_reader.read("test/simple.def")
 _def.print()
