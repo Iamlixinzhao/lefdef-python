@@ -40,6 +40,8 @@ Then
 ```bash
 python test.py
 ```
+The script uses the example LEF and DEF files provided in the `test` directory:
+`NanGate_15nm_UTDA.tech.lef` and `simple.def`.
 ## Usage
 
 To use the LEF reader, you can follow the example provided in the `test.py` file:
